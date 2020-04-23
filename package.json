@@ -2,7 +2,8 @@
   "name": "auto-clone",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "./clone.js",
+  "bin": "./clone.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
