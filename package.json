@@ -1,6 +1,6 @@
 {
   "name": "auto-clone",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/wmzy/auto-clone/issues"
   },
-  "homepage": "https://github.com/wmzy/auto-clone#readme"
+  "homepage": "https://github.com/wmzy/auto-clone#readme",
+  "dependencies": {
+    "git-url-parse": "^11.1.2",
+    "rc": "^1.2.8"
+  }
 }
