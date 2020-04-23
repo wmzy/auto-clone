@@ -3,6 +3,9 @@
 > Clone repo and start the workflow.
 
 ## Config
+
+`cat ~/.auto-clonerc`
+
 ```json
 {
   "dir": "~/projects",
