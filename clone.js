@@ -12,11 +12,11 @@ const {workflows, ...conf} = require('rc')(pkg.name, {
 
 const remote = process.argv[2];
 const remoteInfo = parse(remote);
-const {options, dir, after} = workflows.reduce(({test, ...pre}, current) => {
+const {options, dir, after} = workflows.reduce((conf, {test, ...current}) => {
   if (!test || new RegExp(test).test(remote)) {
-    return {...current, ...pre};
+    return {...conf, ...current};
   }
-  return pre;
+  return conf;
 }, conf);
 
 if (dir) execAt()(`mkdir -p ${dir}`);

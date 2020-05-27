@@ -12,7 +12,7 @@
   "options": "--depth=1",
   "workflows": [
     {
-      "test": "/github/",
+      "test": "github",
       "after": [
         "git config user.name wmzy && git config user.email 1256573276@qq.com",
         "code .",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "test": "/gitlab/",
+      "test": "gitlab",
       "after": [
         "git config user.name [gitlab user name] && git config user.email [gitlab user email]",
         "code ."
